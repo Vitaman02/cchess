@@ -20,5 +20,6 @@ app_name = "cchess"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("api.urls", namespace="api"))
+    path("api/", include("api.urls", namespace="api")),
+    path("", include("frontend.urls", namespace="frontend"))
 ]
